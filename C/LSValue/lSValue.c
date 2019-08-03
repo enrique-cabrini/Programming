@@ -51,4 +51,6 @@ int main( void )
         largest = number3;
 
     printf( "Largest is %d\n", largest );
-}
+
+    return 0;
+} /* end function */
