@@ -30,6 +30,8 @@ int main( void )
                 failures++;
                 validator = 1;
             } /* end else if */
+            else
+                validator = 2;
 
             while ( validator == 2 )
             {
