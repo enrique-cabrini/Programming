@@ -23,8 +23,6 @@ int main( void )
         tempNumber /= 10;
     } /* end while */
 
-    printf( "%d\n", secondNumber );
-
     /* Check if secondNumber is equal to number */
     if ( secondNumber == number )
         printf( "%d is a palindrome\n", number ); /* Print a message */
