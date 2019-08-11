@@ -5,12 +5,8 @@
 number = 0;
 factorial = 0;
 counter = 0;
-# remainder = 0;
-temp_number = "";
 
 number = int( input( "Enter a nonnegative integer: " ) ) # Read number from user
-
-temp_number = str( number ) # Assign the value of number to temp_number
 
 factorial = number # Assign the value of number to factorial
 
