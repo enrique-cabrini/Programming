@@ -9,7 +9,7 @@ int main( void )
     int decimalNumber = 0;
     int reverseNumber = 0;
     int tempNumber;
-    int divisor = 1000;
+    int divisor = 1;
     int remainder;
     int digit;
     int multiplier = 1;
@@ -27,7 +27,17 @@ int main( void )
         tempNumber /= 10;
     } /* end while */
 
-    printf( "%d\n", reverseNumber );
+    tempNumber = binaryNumber; /* Assign the value of number to tempNumber */
+
+    /* Use a loop to find the value of divisor */
+    while ( tempNumber != 0 )
+    {
+        divisor *= 10;
+        tempNumber /= 10;
+    } /* end while */
+
+    divisor = divisor / 10; /* Divide the value of divisor by 10 */
+    printf( "%d\n", divisor );
 
     /* Use a loop to separate the digits of the binary number and convert them to decimal */
     while ( reverseNumber != 0 )
