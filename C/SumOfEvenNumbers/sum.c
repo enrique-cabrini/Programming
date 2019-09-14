@@ -11,4 +11,6 @@ int main( void )
         sum += counter; /* Add counter to sum */
 
     printf( "The sum of even numbers from 2 to 30 is: %d\n", sum ); /* Print the result */
-}
+
+    return 0; /* Indicate the program ended successfully */
+} /* end function */
