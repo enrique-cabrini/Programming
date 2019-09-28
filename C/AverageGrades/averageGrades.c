@@ -12,6 +12,7 @@ int main( void )
     int dCount = 0;
     int fCount = 0;
     int sum = 0;
+    int gradeCount = 0;
     double average = 0;
 
     /* Prompt user for input */
@@ -26,31 +27,35 @@ int main( void )
             case 'A': /* When grade is 'A' */
             case 'a': /* When grade is 'a' */
                 ++aCount; /* Increment aCount */
-                ++sum; /* Increment sum */
+                sum += 4; /* Increment sum by 4 */
+                ++gradeCount; /* Increment gradeCount */
                 break; /* Exit the loop */
 
             case 'B': /* When grade is 'B' */
             case 'b': /* When grade is 'b' */
                 ++bCount; /* Increment bCount */
-                ++sum; /* Increment sum */
+                sum += 3; /* Increment sum by 3 */
+                ++gradeCount; /* Increment gradeCount */
                 break; /* Exit the loop */
 
             case 'C': /* When grade is 'C' */
             case 'c': /* When grade is 'c' */
                 ++cCount; /* Increment cCount */
-                ++sum; /* Increment sum */
+                sum += 2; /* Increment sum by 2 */
+                ++gradeCount; /* Increment gradeCount */
                 break; /* Exit the loop */
 
             case 'D': /* When grade is 'D' */
             case 'd': /* When grade is 'd' */
                 ++dCount; /* Increment dCount */
-                ++sum; /* Increment sum */
+                ++sum; /* Increment sum by 1 */
+                ++gradeCount; /* Increment gradeCount */
                 break; /* Exit the loop */
 
             case 'F': /* When grade is 'F' */
             case 'f': /* When grade is 'f' */
                 ++fCount; /* Increment fCount */
-                ++sum; /* Increment sum */
+                ++gradeCount; /* Increment gradeCount */
                 break; /* Exit the loop */
 
             case '\n': /* When grade is a newline */
@@ -66,7 +71,7 @@ int main( void )
         } /* end switch */
     } /* end while */
 
-    average = ( double ) sum / 5; /* Calculate the average */
+    average = ( double ) sum / gradeCount; /* Calculate the average */
 
     /* Output summary of results */
     printf( "\nTotals for each letter grade are:\n" );
