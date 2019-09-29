@@ -17,5 +17,8 @@ int main()
     gradeBook1.displayMessage();
     gradeBook2.displayMessage();
 
+    gradeBook1.inputGrades(); // Read grades from user
+    gradeBook1.displayGradeReport(); // Display grade report
+
     return 0;
 } // end function
