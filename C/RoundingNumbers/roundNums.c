@@ -1,7 +1,6 @@
 /* This program rounds numbers to the nearest integer */
 #include <stdio.h>
 #include <math.h>
-#include <stdlib.h>
 
 /* Function main begins program execution */
 int main( void )
