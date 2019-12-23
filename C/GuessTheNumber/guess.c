@@ -1,6 +1,7 @@
 /* This program simulates a game of guess the number */
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int generateNumber( void );
 int gameLoop( void );
@@ -59,5 +60,7 @@ int gameLoop( void )
 /* Function to generate a random number */
 int generateNumber( void )
 {
+    srand( time( NULL ) );
+
     return 1 + rand() % 1000;
 } /* end function */
