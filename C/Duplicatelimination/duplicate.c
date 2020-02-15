@@ -30,7 +30,10 @@ int main( void )
                 printf( "The number already exists.\n" );
         }
         else
+        {
             printf( "Invalid input!\n" );
+            numbers[ counter ] = 0;
+        }
     }
 
     printf( "\n" );
@@ -57,6 +60,9 @@ void printArray( int array[] )
 {
     for ( int counter = 0; counter < SIZE; counter++ )
     {
+        if ( array[ counter ] == 0 )
+            continue;
+
         printf( "%d, ", array[ counter ] );
 
         if ( counter % 5 == 0 )
